@@ -58,11 +58,11 @@ def get_recent_user_facts(user_id, limit=10):
         
 @app.route('/')
 def home():
-    return render_template('index2.html')
+    return render_template('index.html')
 
-@app.route("/index2.html")
+@app.route("/index.html")
 def Home():
-    return render_template("index2.html")
+    return render_template("index.html")
 
 @app.route("/community.html")
 def Community():
@@ -94,7 +94,7 @@ def show_login():
 def show_chat():
     if "user_name" not in session:
         return redirect(url_for("show_login"))
-    return render_template("index.html")
+    return render_template("chat.html")
 
 @app.route("/register", methods=["POST"])
 def register():
