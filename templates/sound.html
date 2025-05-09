@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sound Lounge</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🧠 T I O Mental AI</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="./index2.html">Home</a></li>
+
+      <li><a href="./game.html">Game</a></li>
+      <li><a href="./sound.html">Sound Lounge</a></li>
+      <li><a href="./resources.html">Resources</a></li>
+      <li><a href="./community.html">Community</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <div class="sidebar" id="sidebar">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <a href="./index2.html">Home</a>
+
+    <a href="./game.html">Game</a>
+    <a href="./sound.html">Sound Lounge</a>
+    <a href="./resources.html">Resources</a>
+    <a href="./community.html">Community</a>
+  </div>
+
+  <section class="sound-lounge">
+    <h2>🎧 Mental Health Sound Lounge</h2>
+    <p>Explore soothing sounds and curated playlists to help you relax, reflect, and reset.</p>
+
+    <div class="tracks">
+      <div class="track">
+        <h3>Calm the Storm</h3>
+        <p>Gentle rain and ambient tones for anxiety relief.</p>
+        <div class="audio-player">
+          <audio controls>
+            <source src="{{ url_for('static', filename='Zara Larsson, MNEK - Never Forget You.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          
+        </div>
+      </div>
+
+      <div class="track">
+        <h3>Breathe & Reflect</h3>
+        <p>Soft piano and nature sounds to center your thoughts.</p>
+        <div class="audio-player">
+          <audio controls>
+            <source src="{{ url_for('static', filename='Enya - Storms In Africa.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>          
+        </div>
+      </div>
+
+      <div class="track">
+        <h3>Mood Booster</h3>
+        <p>Uplifting melodies to lift your spirits and motivate.</p>
+        <div class="audio-player">
+          <audio controls>
+            <source src="{{ url_for('static', filename='Enya - May It Be (Official).mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>          
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-logo">T I O</div>
+
+    <nav class="footer-nav">
+      <a href="./into.html">About</a>
+
+      <a href="./sound.html">Sound Lounge</a>
+      <a href="./community.html">Community</a>
+      <a href="./game.html">HealQuest</a>
+      <a href="./resources.html">Resources</a>
+    </nav>
+
+    
+
+    <div class="footer-copy">
+      © 2025 T I O MentalAI. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+<script src="/static/script2.js"></script>
+</html>
+
